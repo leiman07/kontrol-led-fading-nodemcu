@@ -1,0 +1,30 @@
+/*
+Youtube.com/LeimanGoVlog
+Tokopedia.com/tridipiproject
+saweria.co/leimangovlog
+instagram/tridipi.project
+github.com/leiman07
+leimanilmu.blogspot.com
+*/
+
+//Cara kontrol led fading dengan potensio meter
+
+int led = D1;
+int pot = A0;
+int potState = 0;
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode (led, OUTPUT);
+pinMode (pot, INPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+potState = analogRead (pot);
+analogWrite (led, potState);
+}
+
+//PROJECT : Cara kontrol led fading dengan potensio meter
+//DIBUAT  : TRIDIPI.PROJECT
+//TANGGAL : 07/12/2021
